@@ -1,3 +1,35 @@
 <template name="layout">
+{{> nav}}
+
 {{> yield}}
+
+{{> footer}}
+</template>
+
+<template name="nav">
+	<nav class="ui menu inverted navbar page grid" style="margin-bottom: 0px">
+		<a href="" class="brand item">{{getVar "name"}}</a>
+		<div class="right menu">
+			<!-- <div class="item">
+				<div class="ui input">
+					<input type="input" placeholder="Email">
+				</div>
+			</div>
+			<div class="item">
+				<div class="ui input">
+					<input type="password" placeholder="Password">
+				</div>
+			</div>
+			<div class="item"><button class="ui green button">Sign in</button></div> -->
+		</div>
+	</nav>
+</template>
+
+<template name="footer">
+	<div class="ui page grid row">
+		<div class="column">
+			<div class="ui divider"></div>
+			<span>{{getVar "name"}} &copy; {{getVar "company"}} 2014</span>
+		</div>
+	</div>
 </template>

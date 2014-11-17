@@ -1,13 +1,13 @@
 // counter starts at 0
 Session.setDefault("counter", 0);
 
-Template.hello.helpers({
+Template.f.helpers({
   counter: function () {
     return Session.get("counter");
   }
 });
 
-Template.hello.events({
+Template.f.events({
   'click button': function () {
     // increment the counter when button is clicked
     Session.set("counter", Session.get("counter") + 1);
