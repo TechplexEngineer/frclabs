@@ -4,18 +4,18 @@
 {{> yield}}
 
 {{> footer}}
+
 </template>
 
 <template name="nav">
 	<nav class="ui menu inverted navbar page grid" style="margin-bottom: 0px">
-		<a href="" class="brand item">{{getVar "name"}}</a>
+		<a href="/" class="brand item"><h1>{{getVar "name"}}</h1></a>
 		<div class="right menu">
-			<!-- <div class="item">
-				<div class="ui input">
-					<input type="input" placeholder="Email">
-				</div>
-			</div>
+
 			<div class="item">
+				{{> loginButtons}}
+			</div>
+			<!-- <div class="item">
 				<div class="ui input">
 					<input type="password" placeholder="Password">
 				</div>

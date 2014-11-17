@@ -9,4 +9,6 @@ insecure
 underscore
 iron:router
 nooitaf:semantic-ui
+accounts-google
+accounts-ui
 
