@@ -1,15 +1,16 @@
 <template name="layout">
-{{> nav}}
-<div class="ui page grid row">
-{{> yield}}
-</div>
-{{> footer}}
+	{{> nav}}
+
+	{{> yield}}
+
+	{{> footer}}
 
 </template>
 
 <template name="nav">
 	<nav class="ui menu inverted navbar page grid" style="margin-bottom: 0px">
 		<a href="/" class="brand item"><h1>{{getVar "name"}}</h1></a>
+		<a href="/articles" class="item">Articles</a>
 		<div class="right menu">
 
 			<div class="item">

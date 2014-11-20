@@ -1,0 +1,16 @@
+<template name="articles">
+	<a href="/article/new" class="ui button">Create a new article</a>
+
+	<div class="ui list">
+		{{#each articles}}
+		<div class="item">
+			<img src="https://secure.gravatar.com/avatar/735c225a2daeee95fcfd63b4f0020fe4?s=100&amp;d=retro" alt="" class="ui avatar image">
+			<div class="content">
+				<a class="header" href="/article/id">{{title}}</a>
+				<div class="description">By {{author}} on {{date.published}}</div>
+				{{summary}}
+			</div>
+		</div>
+		{{/each}}
+	</div>
+</template>
