@@ -1,16 +1,22 @@
 <template name="articles">
-	<a href="/article/new" class="ui button">Create a new article</a>
+	<div class="page-header">
+		<a href="/article/new" class="btn btn-success pull-right">Create a new article</a>
+		<h1>Newest articles <small>learn something new every day</small></h1>
 
-	<div class="ui list">
-		{{#each articles}}
-		<div class="item">
-			<img src="https://secure.gravatar.com/avatar/735c225a2daeee95fcfd63b4f0020fe4?s=100&amp;d=retro" alt="" class="ui avatar image">
-			<div class="content">
-				<a class="header" href="/article/id">{{title}}</a>
-				<div class="description">By {{author}} on {{date.published}}</div>
-				{{summary}}
-			</div>
-		</div>
-		{{/each}}
 	</div>
+	
+
+	<ul class="list-unstyled">
+		{{#each articles}}
+		<li>
+			<div class="article">
+				<img src="https://secure.gravatar.com/avatar/735c225a2daeee95fcfd63b4f0020fe4?s=100&amp;d=retro" alt="" class="img-rounded" style="display:block; margin-right:1em; float:left;width: 2em;height: 2em;border-radius: 500rem;">
+				<a class="header" href="/article/id">{{title}}</a>
+				<p class="description">By <a href="/profile/user" title="{{author.role}} - {{author.team}}">{{author.name}}</a> on {{date.published}}</p>
+				<p class="summary">{{summary}}</p>
+
+			</div>
+		</li>
+		{{/each}}
+	</ul>
 </template>

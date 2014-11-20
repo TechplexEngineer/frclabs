@@ -1,35 +1,32 @@
 <template name="index">
 
-	<div class="ui grid">
-        <div class="row">
-            <div class="column padding-reset">
-                <div class="ui huge message page grid">
-                    <h1 class="ui huge header">Hello, Robot Lovers!</h1>
-                    <p>FRC Labs is dedicated to providing tools and knowledge in an easy and fun way. Please explore our games and ideas sections.</p>
-                    <a class="ui blue button">Learn more &raquo;</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="ui hidden divider"></div>
-    <div class="ui page grid">
-        <div class="three column row">
-            <div class="column">
-                <h2 class="ui header">Curated Tutorials</h2>
-                <p>From the basics to the most complex, including Programming, Electrical and Design. Share your tips and tutorials.</p>
-                <button class="ui tiny button m-top-10">View details &raquo;</button>
-            </div>
-            <div class="column">
-                <h2 class="ui header">Question and Answer</h2>
-                <p>Get help from your fellow teams. Vote up helpful and informative answers, earn karma for good questions and good answers.</p>
-                <button class="ui tiny button m-top-10">View details &raquo;</button>
-            </div>
-            <div class="column">
-                <h2 class="ui header">Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <button class="ui tiny button m-top-10">View details &raquo;</button>
-            </div>
-        </div>
-    </div>
+		<!-- Main jumbotron for a primary marketing message or call to action -->
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Hello, Robot Lovers!</h1>
+				<p>{{getVar "name"}} is dedicated to providing tools and knowledge in an easy and fun way. Please explore our games and ideas sections.</p>
+				<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+			</div>
+		</div>
 
+		<div class="container">
+			<!-- Example row of columns -->
+			<div class="row">
+				<div class="col-md-4">
+					<h2>Articles</h2>
+					<p>From the basics to the most complex, including Programming, Electrical and Design. Share your tips and tutorials.</p>
+					<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+				</div>
+				<div class="col-md-4">
+					<h2>Question and Answer</h2>
+					<p>Get help from your fellow teams. Vote up helpful and informative answers, earn karma for good questions and good answers.</p>
+					<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+				</div>
+				<!-- <div class="col-md-4">
+					<h2>Heading</h2>
+					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+					<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+				</div> -->
+			</div>
+		</div>
 </template>

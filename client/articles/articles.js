@@ -1,8 +1,12 @@
 Template.articles.helpers({
 	articles: [
 		{
-			title:"An awesome post about cool stuff",
-			author:"Techplex Engineer",
+			title:"An awesome post about easyj",
+			author:{
+				name:"Blake Bourque",
+				team:"FRC 5122",
+				role:"Mentor"
+			},
 			summary:"In this post we will discuss the importance of lubeing muffler bearings and changing hammer batteries.",
 			date:{
 				created:"",
@@ -22,7 +26,11 @@ Template.articles.helpers({
 		},
 		{
 			title:"An awesome post about Java",
-			author:"Jamee Luce",
+			author:{
+				name:"Jamee Luce",
+				team:"2648",
+				role:"Mentor"
+			},
 			summary:"In this post we will discuss the importance of abstract classes and interfaces.",
 			date:{
 				created:"",
