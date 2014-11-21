@@ -27,6 +27,10 @@
 					<li><a href="/articles" class="item">Articles</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
+					{{# if currentUser }}
+					<li><a href="/profile/{{currentUser._id}}" title="Dashboard">{{currentUser.profile.name}}</a></li>
+					{{/if}}
+
 					{{> loginButtons}}
 				</ul>
 
