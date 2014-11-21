@@ -1,3 +1,39 @@
 <template name="article_new">
-	create new article
+	<h1>Create a New Article <small>Share your smarts</small></h1>
+	<div class="form-group">
+		<!-- <label for="title">Title</label> -->
+		<input type="email" class="form-control" name="title" placeholder="Article Title">
+	</div>
+	<div class="form-group">
+		<!-- <label for="summary">Summary</label> -->
+		<input type="text" class="form-control" name="summary" placeholder="Summary">
+	</div>
+
+	<h2>Sections
+		<small><a href="#" class="section_help">What is a section?</a></small>
+		<button class="btn btn-primary pull-right">Add Section</button>
+	</h2>
+
+	<div class="section" style="margin-left:15px">
+		<h3>Section 1</h3>
+		<div class="form-group">
+			<!-- <label for="sec1_title">Section 1 Title</label> -->
+			<input type="text" class="form-control" name="sec1_title" placeholder="Section 1 Title">
+		</div>
+		<div class="form-group">
+			<label for="sec1_content">Section 1 Content</label>
+			<textarea class="form-control" name="sec1_content"></textarea>
+		</div>
+	</div>
+
+	<div class="form-group text-right">
+		<button class="btn btn-danger" title="Discard">Bin it</button>
+		<button class="btn btn-primary">Save as Draft</button>
+		<button class="btn btn-success">Save &amp; Publish</button>
+
+	</div>
+
+	
+
+
 </template>
