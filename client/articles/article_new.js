@@ -6,12 +6,15 @@ Template.article_new.events({
 		alert("Use sections for individual steps of your article.");
 	},
 	"click .actions .delete": function (event, template) {
+		event.preventDefault();
 		console.log("delete", event, template);
 	},
 	"click .actions .draft": function (event, template) {
+		event.preventDefault();
 		console.log("draft", event, template);
 	},
 	"click .actions .publish": function (event, template) {
+		event.preventDefault();
 		console.log("publish");
 		var data = {
 			title:$('input[name="title"]').val(),

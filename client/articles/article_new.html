@@ -1,10 +1,10 @@
 <template name="article_new">
 	<h1>Create a New Article <small>Share your smarts</small></h1>
-	<div class="form-group">
+	<div class="form-group controls">
 		<!-- <label for="title">Title</label> -->
 		<input type="text" class="form-control" name="title" placeholder="Article Title" required minlength="10">
 	</div>
-	<div class="form-group">
+	<div class="form-group controls">
 		<!-- <label for="summary">Summary</label> -->
 		<input type="text" class="form-control" name="summary" placeholder="Summary" required minlength="10">
 	</div>
@@ -18,7 +18,7 @@
 	{{> section num='1'}}
 	</div>
 
-	<div class="form-group text-right actions">
+	<div class="form-group controls text-right actions">
 		<button type="submit" class="btn btn-danger delete" title="Discard">Bin it</button>
 		<button type="submit" class="btn btn-primary draft">Save as Draft</button>
 		<button type="submit" class="btn btn-success publish">Save &amp; Publish</button>
